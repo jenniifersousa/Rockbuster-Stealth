@@ -1,6 +1,5 @@
-## A SQL query outputting the top 10 countries for Rockbuster Stealth in terms of customer numbers. 
+       A SQL query outputting the top 10 countries for Rockbuster Stealth in terms of customer numbers. 
 
-## Countries 
 SELECT D.country,
        COUNT(customer_id) AS customer_number
 FROM customer A
@@ -11,8 +10,8 @@ GROUP BY country
 ORDER BY customer_number DESC
 LIMIT 10
 
-### Since Rockbuster wanted to knoww the top 10 countries with the most costumers, the first step was to look at the Entity Relationship Diagram to see
-### what kind of relationship the country and customer tables had. According to the ERD I needed to join the customer, address, city, and country tables with the
-### address and city tables being the links to the customer and country tables. After using the multiple join syntax, I grouped the data by country, sorted the 
-### customer_number result-set by descending order, and limited the table by 10, since they only the top 10 countries were needed. 
+       Since Rockbuster wanted to knoww the top 10 countries with the most costumers, the first step was to look at the Entity Relationship Diagram to see
+       what kind of relationship the country and customer tables had. According to the ERD I needed to join the customer, address, city, and country tables with the
+       address and city tables being the links to the customer and country tables. After using the multiple join syntax, I grouped the data by country, sorted the 
+       customer_number result-set by descending order, and limited the table by 10, since they only the top 10 countries were needed. 
 
